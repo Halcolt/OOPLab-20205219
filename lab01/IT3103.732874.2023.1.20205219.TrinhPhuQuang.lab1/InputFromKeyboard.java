@@ -1,19 +1,16 @@
 import java.util.Scanner;
 public class InputFromKeyboard {
     public static void main(String agrs[]) {
-        Scanner keyboard = new Scanner(System.in);// keyboard is var to read data from keyboard
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.println("What's your name?");
-        String strName = keyboard.nextLine();// input name then go to nextline
+        String strName = keyboard.nextLine();
         System.out.print("How old are you? ");
-        int iAge = keyboard.nextInt();// input Age then go to nextline
+        int iAge = keyboard.nextInt();
         System.out.println("How tall are you (m)?");
-        double dHeight = keyboard.nextDouble();// input height then go to nextline
-        //similar to other data types
-        //nextByte(), nextShort(), nextLong()
-        //nextFloat(), nextBoolean()
+        double dHeight = keyboard.nextDouble();
 
         System.out.println("Mrs/Ms." + strName + "," + iAge + " years old. "
-                + "Your height is " + dHeight + "."); // print all infomation
+                + "Your height is " + dHeight + ".");
     }
 }
